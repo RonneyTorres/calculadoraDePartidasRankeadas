@@ -1,4 +1,4 @@
-let nivelHeroi = ''
+let nivelHeroi = '';
 
 function classificaHeroiPorVitoria(qtdVitorias, qtdDerrotas) {
   saldoVitorias = qtdVitorias - qtdDerrotas;
@@ -14,14 +14,13 @@ function classificaHeroiPorVitoria(qtdVitorias, qtdDerrotas) {
     nivelHeroi = 'Diamante';
   } else if (saldoVitorias <= 100) {
     nivelHeroi = 'Lendário';
-  } else if (saldoVitorias >= 101) {
-    nivelHeroi = 'Imortal'
   } else {
-    console.log('Quantidade de vitória ou derrota está incorreto!')
+    nivelHeroi = 'Imortal';
   }
-  return saldoVitorias, nivelHeroi;
+  return qtdVitorias
 }
-console.log(`O Herói tem um saldo de ${saldoVitorias} vitórias e está no nivel ${nivelHeroi}`)
 
-classificaHeroiPorVitoria('a',0);
+classificaHeroiPorVitoria(20,0);
+//console.log(`O Herói tem um saldo de ${saldoVitorias} vitórias e está no nivel ${nivelHeroi}`)
 
+console.log(qtdVitorias);
